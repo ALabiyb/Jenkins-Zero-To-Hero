@@ -1,11 +1,11 @@
-apiVersion: apps/v1
+apiVersion: apps/v12
 kind: Deployment
 metadata:
   name: spring-boot-app
   labels:
     app: spring-boot-app
 spec:
-  replicas: 2
+  replicas: 12
   selector:
     matchLabels:
       app: spring-boot-app
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: munimdevops/ultimate-cicd:3
+        image: munimdevops/ultimate-cicd:12
         ports:
-        - containerPort: 8080
+        - containerPort: 12
