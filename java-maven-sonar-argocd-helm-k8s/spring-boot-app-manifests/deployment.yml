@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: munimdevops/ultimate-cicd:3
+        image: munimdevops/ultimate-cicd:6
         ports:
         - containerPort: 8080
